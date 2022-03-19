@@ -1,8 +1,8 @@
 /*======================================================================================
-========================    - NVIC.c						 ===========================
-========================    - Created: 19/3/2022			 ===========================
+========================    - NVIC.c			     ===========================
+========================    - Created: 19/3/2022	     ===========================
 ========================    - Author: Mohammed Magdy         ===========================
-========================    - Version : 1.0				     ===========================
+========================    - Version : 1.0	   	     ===========================
 ======================================================================================*/
 
 
@@ -23,10 +23,10 @@
 /************************************************************************/
 
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Enables the interrupt .													            */
-/*	Arguments : interrupt ID (0 : 239) 											                    */
-/*	Returns   :	Void        																		*/
+/*	Description :						   				    */
+/*	Function Enables the interrupt .							    */
+/*	Arguments : interrupt ID (0 : 239) 							    */
+/*	Returns   :	Void        			   					    */
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -39,10 +39,10 @@ void MNVIC_vENABLE_INT(u8 copy_u8int_num)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Disables the interrupt .													            */
-/*	Arguments : interrupt ID (0 : 239) 											                    */
-/*	Returns   :	Void        																		*/
+/*	Description :										    */		
+/*	Function Disables the interrupt .							    */		
+/*	Arguments : interrupt ID (0 : 239) 							    */		
+/*	Returns   :	Void        								    */		
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -56,10 +56,10 @@ void MNVIC_vDISABLE_INT(u8 copy_u8int_num)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Sets the pending status of the interrupt .												*/
-/*	Arguments : interrupt ID (0 : 239) 											                    */
-/*	Returns   :	Void        																		*/
+/*	Description :										    */
+/*	Function Sets the pending status of the interrupt .					    */	
+/*	Arguments : interrupt ID (0 : 239) 							    */	
+/*	Returns   :	Void        								    */	
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -73,10 +73,10 @@ void MNVIC_vSET_PENDING_INT(u8 copy_u8int_num)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Clears the pending status of the interrupt .											*/
-/*	Arguments : interrupt ID (0 : 239) 											                    */
-/*	Returns   :	Void        																		*/
+/*	Description :										    */
+/*	Function Clears the pending status of the interrupt .					    */
+/*	Arguments : interrupt ID (0 : 239) 							    */
+/*	Returns   :	Void        								    */
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -90,10 +90,10 @@ void MNVIC_vCLR_PENDING_INT(u8 copy_u8int_num)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Gets the active status of the interrupt .		  										*/
-/*	Arguments : interrupt ID (0 : 239) 											                    */
-/*	Returns   :	Status (1 for Active) || (0 for Non Active)        									*/
+/*	Description :										    */
+/*	Function Gets the active status of the interrupt .		  			    */
+/*	Arguments : interrupt ID (0 : 239) 							    */
+/*	Returns   :	Status (1 for Active) || (0 for Non Active)        			    */
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -109,10 +109,10 @@ u8 	 MNVIC_vGET_ACTIVE_INT(u8 copy_u8int_num)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Generates interrupt by software .		  												*/
-/*	Arguments : interrupt ID (0 : 239) 											                    */
-/*	Returns   :	Void									        									*/
+/*	Description :										    */
+/*	Function Generates interrupt by software .		  				    */
+/*	Arguments : interrupt ID (0 : 239) 							    */
+/*	Returns   :	Void									    */
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -126,11 +126,11 @@ void MNVIC_vSWI_TRIGEGR(u8 copy_u8int_num)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Sets the number of groups and sub-groups available .		  							*/
-/*	Arguments : Void				 											                    */
-/*	Returns   :	Void									        									*/
-/*	Note      :	Configuration is done in config file	      										*/
+/*	Description :										    */
+/*	Function Sets the number of groups and sub-groups available .		  		    */
+/*	Arguments : Void				 					    */
+/*	Returns   :	Void									    */
+/*	Note      :	Configuration is done in config file	      				    */
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
@@ -144,12 +144,12 @@ void MNVIC_vSET_GROUP_SUB(void)
 
 /****************************************************************************************************/
 /****************************************************************************************************/
-/*	Description :																					*/
-/*	Function Sets the priority (Group And Sub-Group) .		  										*/
-/*	Arguments : 1- interrupt ID (0 : 239)                                                           */
-/* 				2- Group Number                                                                     */
-/* 				3- Sub-Group number											                    	*/
-/*	Returns   :	Void									        									*/
+/*	Description :										    */
+/*	Function Sets the priority (Group And Sub-Group) .		  			    */	
+/*	Arguments : 1- interrupt ID (0 : 239)                                                       */        
+/* 				2- Group Number                                                     */        
+/* 				3- Sub-Group number						    */	
+/*	Returns   :	Void									    */       
 /****************************************************************************************************/
 
 /**************************** Start of Function ****************************/
