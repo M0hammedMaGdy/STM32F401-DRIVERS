@@ -31,7 +31,7 @@ typedef struct {
 
 }DMA_t;
 
-#define DMA0					(DMA_t*)(0x40026000)
-#define DMA1					(DMA_t*)(0x40026400)
+#define DMA0					((DMA_t*)(0x40026000))
+#define DMA1					((DMA_t*)(0x40026400))
 
 #endif /* DMA_PRIVATE_H_ */
