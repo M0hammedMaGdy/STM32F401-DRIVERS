@@ -33,6 +33,6 @@ typedef struct {
 #define AIRCR		*(volatile u32*(0xE000ED0C))
 
 /*	 NVIC Registers pointer								*/
-#define NVIC		(NVIC_t*)(NVIC_BASE_ADDRESS)
+#define NVIC		((NVIC_t*)(NVIC_BASE_ADDRESS))
 
 #endif
